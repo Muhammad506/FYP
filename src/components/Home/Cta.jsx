@@ -24,7 +24,7 @@ const Cta = () => {
           }`}
         >
           <img
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-auto "
             src="CTA.jpg"
             alt="CTA"
           />
@@ -33,7 +33,7 @@ const Cta = () => {
         {/* Right Content (Text & Button) */}
         <div
           ref={rightContentRef}
-          className={`lg:w-1/2 space-y-6 lg:space-y-8 lg:pl-8 ${
+          className={`lg:w-1/2 space-y-6 lg:space-y-8 flex flex-col self-center lg:pl-8 ${
             rightContentInView ? "animate-slideInRight" : "opacity-0"
           }`}
         >
