@@ -1,5 +1,5 @@
 import AboutUS from "./AboutUs";
-import Cta from "./CTA";
+import Cta from "./Cta";
 import Features from "./Features";
 import LandingPage from "./LandingPage";
 import ProjectComplexity from "./ProjectComplexity";
