@@ -68,7 +68,7 @@ const NavBar = () => {
             </button>
           </Link>
           <Link to="/login">
-            <button className="bg-gradient-to-r from-yellow-400 to-yellow-600  text-sm font-bold rounded-full px-6 py-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg shadow-md">
+            <button className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-sm font-bold rounded-full px-6 py-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg shadow-md">
               Login
             </button>
           </Link>
