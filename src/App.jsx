@@ -6,11 +6,12 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import FeaturesPage from "./components/Features/FeaturesPage";
 import Login from "./Login";
 import Register from "./components/Register";
+import ContactUs from "./components/ContactUs";
 
 const App = () => {
   const location = useLocation();
   const hideNavbarFooter =
-    location.pathname === "/login" || location.pathname === "/register";
+    location.pathname === "/login" || location.pathname === "/register"|| location.pathname === "/contact-us";
 
   return (
     <div>
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         {/* Add additional routes here */}
       </Routes>
       {!hideNavbarFooter && <Footer />}
