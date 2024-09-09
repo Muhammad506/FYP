@@ -1,4 +1,5 @@
 import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,20 +15,43 @@ const Footer = () => {
             />
           </div>
 
-          {/* Navigation Links */}
+          {/* Navigation Links with Link component */}
           <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12 text-center">
-            {["Home", "About", "Features", "Reports", "Contact Us"].map(
-              (item, index) => (
-                <div
-                  key={index}
-                  className="relative group cursor-pointer transition-colors duration-300 hover:text-yellow-400"
-                >
-                  {item}
-                  {/* Underline effect */}
-                  <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                </div>
-              )
-            )}
+            <Link
+              to="/"
+              className="relative group cursor-pointer transition-colors duration-300 hover:text-yellow-400"
+            >
+              Home
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </Link>
+            <Link
+              to="/about-us"
+              className="relative group cursor-pointer transition-colors duration-300 hover:text-yellow-400"
+            >
+              About Us
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </Link>
+            <Link
+              to="/features"
+              className="relative group cursor-pointer transition-colors duration-300 hover:text-yellow-400"
+            >
+              Features
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </Link>
+            <Link
+              to="/reports"
+              className="relative group cursor-pointer transition-colors duration-300 hover:text-yellow-400"
+            >
+              Reports
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </Link>
+            <Link
+              to="/contact-us"
+              className="relative group cursor-pointer transition-colors duration-300 hover:text-yellow-400"
+            >
+              Contact Us
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </Link>
           </div>
 
           {/* Social Media Icons */}

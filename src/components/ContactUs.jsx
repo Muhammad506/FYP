@@ -104,12 +104,13 @@ const ContactUs = () => {
         </div>
       </div>
 
-      {/* Right side: Image */}
-      <div className="w-1/2 h-screen md:w-1/2 hidden self-center  md:block">
+      {/* Right side: Image with overlay and gradient */}
+      <div className="relative w-full lg:h-full h-screen self-center md:w-1/2 hidden md:block  ">
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50"></div>
         <img
-          src="https://img.freepik.com/free-photo/contact-register-feedback-support-help-concept_53876-124243.jpg"
+          src="Contact-us.jpeg"
           alt="Contact Us"
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
         />
       </div>
     </main>
