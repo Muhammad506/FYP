@@ -23,12 +23,6 @@ const ContactUs = () => {
 
   return (
     <main className="flex flex-col md:flex-row min-h-screen mt-10">
-      <a
-        className="absolute z-50 left-4 top-4 opacity-90 hover:opacity-100 text-black border-2 font-semibold border-black rounded-3xl px-4 py-1 transition duration-300 ease-in-out"
-        href="/"
-      >
-        Back
-      </a>
       {/* Left side: Form content */}
       <div className="flex items-center justify-center w-full md:w-1/2 p-8 bg-white text-gray-800">
         <div className="w-full max-w-lg">
