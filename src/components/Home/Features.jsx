@@ -122,10 +122,10 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center justify-center p-4 border border-transparent rounded-lg bg-gradient-to-r from-[#021430] via-[#0f1c47] to-[#021430] shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2 hover:scale-105"
+              className="group flex flex-col items-center justify-center p-4 border border-transparent rounded-lg bg-gradient-to-r from-[#021430] via-[#0f1c47] to-[#021430] shadow-lg lg:hover:shadow-2xl transition-transform duration-300 lg:hover:-translate-y-2 lg:hover:scale-105"
             >
               <div className="mb-2">{feature.icon}</div>
-              <span className="text-xs sm:text-sm md:text-base font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              <span className="text-xs sm:text-sm md:text-base font-semibold opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 text-center">
                 {feature.label}
               </span>
             </div>

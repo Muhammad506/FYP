@@ -4,14 +4,14 @@ import Footer from "./components/Footer";
 import HomePage from "./components/Home/HomePage";
 import AboutUs from "./components/AboutUs/AboutUs";
 import FeaturesPage from "./components/Features/FeaturesPage";
-import Login from "./Login";
+import Login from "./components/Login";
 import Register from "./components/Register";
 import ContactUs from "./components/ContactUs";
 
 const App = () => {
   const location = useLocation();
   const hideNavbarFooter =
-    location.pathname === "/login" || location.pathname === "/register"|| location.pathname === "/contact-us";
+    location.pathname === "/login" || location.pathname === "/register";
 
   return (
     <div>
